@@ -1,0 +1,69 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('le_petit_coin '. $this->translate(''))->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?php echo $this->headScript()->appendFile('/public/js/afficher_cacher_div.js')?>
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/layout.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+            ->prependFile($this->basePath() . '/js/jquery.min.js')
+            ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+
+    </head>
+    <body>
+      <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '186798698487818',
+        xfbml      : true,
+        version    : 'v2.8',
+        quote      : 'annonce n°789654321',
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/fr_FR/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+</script>
+
+        <div >
+            <?php echo $this->content; ?>
+
+            <nav>
+              <a href="/application/accueil/index">Accueil</a>
+              <a href="/application/annonces/index">Annonces</a>
+              <a href="/application/offres/index" >Offres</a>
+              <a href="/application/demandes/index">Demandes</a>
+              <a>....</a>
+              <a href="/application/login/index" class="deconnected">Connexion</a>
+              <a href="/application/login/index" class="connected">Déconnexion</a>
+            </nav>
+
+
+        </div>
+
+      <!-- /container -->
+<script src="https://chatbox.fr/chat/b9e7318c45f21feb74354a395ae81d92"></script>
+        <?php echo $this->inlineScript() ?>
+          </body>
+</html>

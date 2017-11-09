@@ -1,0 +1,60 @@
+
+.page {
+  min-height: 200px;
+  margin: 100px auto;
+  display: flex;
+  flex: wrap;
+  border: 1px solid black;
+  width: 80%;
+  position: relative;
+  border-radius: 5px;
+}
+  .page .col1 {
+    min-width: 102px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 10%;
+  }
+    .page .col1 h5 {
+      position: absolute;
+      top: -20px;
+      background: #fff;
+      left: 10px;
+      padding: 0 5px; }
+  .page h1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap; }
+
+.mainanonce {
+  min-width: 110px;
+  padding-left: 15px;
+  width: 85%; }
+  .mainanonce h3 {
+    margin-top:70px; }
+
+    .bouton {
+      margin-right: 20px;
+    white-space: nowrap;
+    bottom: 0;
+    direction: rtl;
+    text-align: : right;
+    margin-top: 60px; }
+
+.col2 {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  width: 15%;
+  text-align: right; }
+  .col2 h6 {
+    direction: rtl;
+    white-space: nowrap; }
+  .col2 h2 {
+    direction: rtl; }
+  .col2 p {
+    white-space: nowrap;
+    direction: rtl; }
+
+
+/*# sourceMappingURL=anonce.css.map */

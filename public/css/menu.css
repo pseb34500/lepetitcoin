@@ -1,0 +1,26 @@
+nav {
+  width: 99.5%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: yellow;
+  text-align: right;
+  line-height: 40px;
+  padding-right: 5px;
+  border: 1px solid black; }
+  nav a:last-child {
+    border-right: hidden;
+    border-left: 1px solid black; }
+  nav a:nth-child(5) {
+    visibility: hidden; }
+  nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    border-right: 1px solid black;
+    padding: 0px 10px;
+    margin: auto; }
+
+/*# sourceMappingURL=menu.css.map */

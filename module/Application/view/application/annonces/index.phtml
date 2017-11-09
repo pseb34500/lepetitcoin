@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="/css/anonce.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     </head>
+     <body>
+     <section>
+       <div class="page">
+           <div class="col1">
+             <h5>Anonce</h5>
+             <h1>Titre</h1>
+             <p>Theme</p>
+             <p>Catégorie</p>
+             <p>Type</p>
+             <img class="thumbnail" src="http://placehold.it/200x200"></img>
+             <img src="http://placehold.it/100x100"></img>
+             <img src="http://placehold.it/100x100"></img>
+           </div>
+           <div class="mainanonce">
+             <h3>Description du produit:</h3>
+             <p> Imperio imperio nimis ab Sp numquam Superbum ab numquam aliqua et oderit Curi memoriam viderit ducibus autem Superbum nimis Sp aliqua alienos quod propter crudelitatem cum Superbum civitas Italia oderit imperio quodam alienos quodam Tarquinium alterum viderit numquam non in Sp habemus Quis probitatem semper etiam quos Quis Sp nihil in eius est propter qui et diligamus duobus ab ad imperio est Pyrrho in aliqua propter quos M' Cum quos est quodam et semper Sp duobus modo vidimus ad propter non etiam decertatum aliqua Superbum virtutem alienos numquam quis animos benevola virtutem magis diligamus ab imperio viderit qui propter Pyrrho.</p>
+             <form method="POST" action="#contactpage">
+               <input type="submit" name="Concact" value="Contacter le vendeur" class="bouton">
+             </form>
+           </div>
+           <div class="col2">
+             <h6>date de depot</h6>
+             <h2>prix</h2>
+             <p>Béziers</br>34500</p>
+
+             <div class="partage">
+             <div id="shareBtn" class="btn btn-info clearfix">Partager</div>
+
+
+             <script>
+             document.getElementById('shareBtn').onclick = function() {
+               FB.ui({
+                 method: 'share',
+                 mobile_iframe: true,
+             redirect_uri: 'http://lepetitcoin.zend/application/annonces/index',
+                 picture: 'https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200',
+                href:'http://lepetitcoin.zend/application/annonces/index',
+             title: 'titre annonce',
+             description: 'Imperio imperio nimis ab Sp numquam Superbum ab numquam aliqua et oderit Curi memoriam viderit ducibus autem.',
+               }, function(response){});
+             }
+             </script>
+             </div>
+           </div>
+       </div>
+     </section>
+     <div class="container" id="contactpage">
+       <div class="cot1">
+         <p>Le Vendeur: </p>
+           <div>
+           <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+           <p>Pseudo: $Pseudo_du_vendeur</p>
+         </div>
+
+          <div>
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            <p>Email: $Email_du_vendeur</p>
+          </div>
+
+          <div>
+            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+            <p>Numero: Numero du vendeur</p>
+          </div>
+
+          <div>
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            <p>Ville:$ville_du_vendeur</p>
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+            <p>Code postal:$code_postal</p>
+          </div>
+        </div>
+        <div class="cot2">
+          <div>
+            <p>Envoyer un message au  vendeur : </p>
+            <textarea name="descritption" rows="15" cols="85"></textarea>
+            <button type="button" name="button">Envoyer</button>
+          </div>
+        </div>
+      </div>
+   </section>
+</body>
+</html>

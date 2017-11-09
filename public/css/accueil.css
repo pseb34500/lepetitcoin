@@ -1,0 +1,137 @@
+
+body{
+  background-color: #FFFF8E ;
+  margin: 100px auto;
+  width:90%;
+}
+
+#search{
+  width: 85%;
+}
+
+.cadre{
+  background-color: #fff;
+  margin:auto;
+  padding-bottom: 20px;
+  width:60%;
+  border: 1px solid #5A5214;
+  text-align: center;
+}
+
+.last h4{
+  margin-top: -15px;
+  background-color: #fff;
+  width:230px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3{
+  margin-top: -15px;
+  background-color: #fff;
+  width:150px;
+  margin-left: 20px;
+}
+
+.listes{
+  margin: 10px;
+}
+
+#topright{
+  float: right;
+}
+
+.boutontop{
+  margin: auto;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.page {
+  background-color: #fff;
+  min-height: 200px;
+  margin: 10px auto;
+  display: flex;
+  flex: wrap;
+  border: 1px solid #5A5214;
+  width: 95%;
+  position: relative;
+  border-radius: 5px;
+}
+  .page .col1 {
+    min-width: 102px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 10%;
+  }
+    .page .col1 h5 {
+      position: absolute;
+      top: -20px;
+      background: #fff;
+      left: 10px;
+      padding: 0 5px; }
+  .page h1 {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    white-space: nowrap; }
+
+.mainanonce {
+  background-color: #fff;
+  padding-left: 15px;
+  width: 85%; }
+  .mainanonce h3 {
+    width:85%;
+    margin-top:75px; }
+
+    .bouton {
+      margin-right: 3px;
+    white-space: nowrap;
+    bottom: 0;
+    direction: rtl;
+    text-align: : right;
+    margin-top: 20px;
+  margin-bottom: 20px;}
+
+.col2 {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  width: 15%;
+  text-align: right; }
+  .col2 h6 {
+    direction: rtl;
+    white-space: nowrap; }
+  .col2 h2 {
+    direction: rtl; }
+  .col2 p {
+    white-space: nowrap;
+    direction: rtl; }
+.last{
+  margin: auto;
+  width: 80%;
+  margin-top: 20px;
+  border:1px solid;
+}
+.listesbottom{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+#lcat, #ltheme, #lville, #lproduit{
+  margin: auto;
+  list-style: none;
+  width:20%;
+  }
+a{color:#000;
+}
+.offres{
+  margin-bottom: 75px;
+}
+
+.boutontop{
+  text-align: right;
+}

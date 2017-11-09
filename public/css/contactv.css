@@ -1,0 +1,37 @@
+
+.container{
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cot1{
+  margin: 0 auto;
+  width: 20%;
+  min-width: 200px;
+}
+
+.cot1 div{
+  padding-left: 10%;
+}
+
+.cot2{
+  margin: auto;
+  width: 70%;
+  min-width: 350px;
+}
+.cot2 p{
+  float: left;
+  font-size:20px;
+
+}
+.cot2 button{
+  margin-left: 10%;
+  margin-top: 2%;
+  width: 80%;
+}
+textarea{
+  min-height: 300px;
+  max-height: 00px;
+}

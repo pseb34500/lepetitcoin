@@ -1,0 +1,67 @@
+
+.page{
+  border: none;
+  width: 90%;
+  display:flex;
+  flex-wrap: wrap-reverse;
+}
+
+.part1{
+  border: 1px solid black;
+  width:500px;
+  height:480px;
+}
+  .page .part1 {
+    min-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    width: 30%;
+    margin: auto;
+    height: 480px;
+    border: 1px solid black; }
+  .page .part2 {
+    min-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    border: 1px solid black; }
+    .page .part2 .col1 {
+      padding-top: 10px;
+      width: 85%; }
+    .page .part2 .col2 {
+      margin-left: -10px;
+      width: 15%;
+      min-width: 50px;}
+      .page .part2 .col2 #checkbox3, .page .part2 .col2 #checkbox4 {
+        margin-top: 20px; }
+      .page .part2 .col2 .bouton {
+        margin-top: 30px; }
+textarea{
+  margin-left: 2%;
+  min-width: 90%;
+  max-width: 90%;
+}
+#valid{
+  margin-left:10% ;
+  width:80%;
+}
+#intitule{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  width: 80%;
+}
+#checkbox1{
+  margin-left: 10%;
+}
+#checkbox2{
+  margin-left: 27%;
+}
+form{
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+#prix{
+  width:10%;
+}
+/*# sourceMappingURL=creer.css.map */

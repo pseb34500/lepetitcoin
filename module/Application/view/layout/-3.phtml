@@ -1,0 +1,75 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('le_petit_coin '. $this->translate(''))->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?php echo $this->headScript()->appendFile('/public/js/afficher_cacher_div.js')?>
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/anonce.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+            ->prependFile($this->basePath() . '/js/jquery.min.js')
+            ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+
+    </head>
+    <body>
+
+        <div >
+            <?php echo $this->content; ?>
+
+            <nav>
+              <a href="/application/accueil/index">Accueil</<a>
+              <a href="/application/annonces/index">Annonces</a>
+              <a href="/application/offre/index" >Offres</a>
+              <a href="/application/demande/index">Demandes</a>
+  <a id ="cache">....</a>
+              <?php
+
+              if($_SESSION['connecte'] )
+              {
+                echo '<a href="../login/profile">Mon compte</a>';
+
+
+              }else {
+                echo '';
+              }
+
+
+
+              if($_SESSION['connecte'] )
+              {
+                echo '<a href="../login/logout">Se deconnecter</a>';
+
+
+              }else {
+                echo '<a href="../login/index">Se connecter</a>';
+              }
+
+
+
+
+              ?>
+
+            </nav>
+
+
+        </div> <!-- /container -->
+        <?php echo $this->inlineScript() ?>
+          </body>
+    <footer>
+<p>Le petit coin en construction Enzo Christophe Sébastien</p>
+  </footer>
+</html>

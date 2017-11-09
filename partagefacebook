@@ -1,0 +1,22 @@
+<div class="page-header">
+
+<div id="shareBtn" class="btn btn-success clearfix">Share</div>
+
+<p style="margin-top: 50px">
+  <hr />
+  <a class="btn btn-small"  href="http://lepetitcoin.zend/application/annonces/index">Share Dialog Documentation</a>
+</p>
+
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    mobile_iframe: true,
+    redirect_uri: 'http://lepetitcoin.zend/application/annonces/index',
+    picture: 'https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200',
+    href:'http://lepetitcoin.zend/application/annonces/index',
+    title: 'titre annonce',
+    description:'Description du produit: Imperio imperio nimis ab Sp numquam Superbum ab numquam aliqua et oderit Curi memoriam viderit ducibus autem.',
+  }, function(response){});
+}
+</script>
